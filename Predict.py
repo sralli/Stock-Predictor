@@ -16,4 +16,3 @@ import matplotlib.pyplot as plt
 %matplotlob inline
 
 
-as
