@@ -8,7 +8,7 @@ class Stock_Explorer():
 
     #Interact with single stock data to evaluate it and return predicted values
 
-    def __inti__(self, series, symbol, rolling_window_size = 10, prediction_window_size = 14, return_date_range = 100):
+    def __init__(self, series, symbol, rolling_window_size = 10, prediction_window_size = 14, return_date_range = 100):
         # series = Pandas Series of stocks data. Dates are index
         # Symbol = string of symbol to be evaluated
         # rolling_window_size = window size of rolling stats

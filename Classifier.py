@@ -8,12 +8,13 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import TimeSeriesSplit
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
+
 import fix_yahoo_finance as fix 
 import pandas_datareader.data as pdr
 
 
 import matplotlib.pyplot as plt
-%matplotlob inline
+#%matplotlob inline
 
 
 class Stock_Classifier():
@@ -23,7 +24,7 @@ class Stock_Classifier():
         # Initialises Linear Reg classisfier, Cross Validator and Standard Scaler
 
         self.n_splits = n_splits
-        self.clf =  Pipeline([('scl', StandardSclaer()), ('clf', LinearRegression())])
+        self.clf =  Pipeline([('scl', StandardScaler()), ('clf', LinearRegression())])
 
         self.cv = TimeSeriesSplit(n_splits=self.n_splits)
 
